@@ -1,3 +1,6 @@
+using Warrior.Enums;
+using Warrior.Equipments;
+
 namespace Warrior
 {
     class warrior
@@ -9,11 +12,10 @@ namespace Warrior
         private string _name;
         private bool _isAlive;
 
-        public int Health
-        {
-            get { return _health; }
-            set { _health = value; }
-        }
+        public bool IsAlive { get
+            {
+                return _isAlive;
+            } }
 
         private Weapon weapon;
         private Armor armor;
