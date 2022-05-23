@@ -2,11 +2,24 @@ namespace Warrior
 {
     class warrior
     {
+        private int _startHealth;
         private int _health;
         private int _attack;
         private int _defence;
         private string _name;
         private bool _isAlive;
+
+        public int Health
+        {
+            get { return _health; }
+            set { _health = value; }
+        }
+
+        private Weapon weapon;
+        private Armor armor;
+
+        private Faction faction;
+
         /*private int _speed;
         private int _luck;
         private int _level;
